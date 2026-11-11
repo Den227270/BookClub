@@ -2,7 +2,7 @@
    Книжный клуб — отправка заявки
    ============================================================ */
 
-const URL = "ВАШ_НОВЫЙ_GS_URL_СЮДА";
+const URL = "https://script.google.com/macros/s/AKfycbyFXVaKsAhZd1DTesbNMQgGFcMxcmXN4Dw__EWy9Wo5g6ir22t16esEdnK1nnhHoA8R/exec";
 
 const form = document.getElementById("order-form");
 const btn = document.getElementById("submit-btn");
