@@ -3,121 +3,274 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Книжный клуб «Читаем вместе»</title>
+  <title>Книжный клуб «Читаем вместе» — читаем и обсуждаем</title>
+  <meta name="description" content="Книжный клуб онлайн: одна книга в месяц, живое обсуждение, бесплатно. Вступить может каждый.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Шапка -->
+  <!-- ===== Шапка ===== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo">📚 Читаем вместе</a>
+      <a href="#" class="logo">
+        <span class="logo__icon">📖</span>
+        <span class="logo__text">Читаем вместе</span>
+      </a>
       <nav class="nav">
         <a href="#about" class="nav__link">О клубе</a>
         <a href="#books" class="nav__link">Книги</a>
-        <a href="#join" class="nav__link">Вступить</a>
+        <a href="#how" class="nav__link">Как это работает</a>
+        <a href="#join" class="btn btn--small">Вступить</a>
       </nav>
     </div>
   </header>
 
-  <!-- Герой -->
+  <!-- ===== Герой ===== -->
   <section class="hero">
-    <div class="container">
-      <h1>Книжный клуб «Читаем вместе»</h1>
-      <p>Читаем по одной книге в месяц и обсуждаем онлайн. Бесплатно, без обязательств.</p>
-      <a href="#join" class="btn">Вступить в клуб</a>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="hero__badge">Бесплатно · Онлайн · Каждый месяц</span>
+        <h1 class="hero__title">Книжный клуб,<br>в который хочется возвращаться</h1>
+        <p class="hero__subtitle">
+          Одна книга в месяц. Одно живое обсуждение. Никаких обязательств —
+          только хорошие истории и люди, которым есть что сказать.
+        </p>
+        <div class="hero__actions">
+          <a href="#join" class="btn btn--primary">Вступить в клуб</a>
+          <a href="#books" class="btn btn--ghost">Смотреть книги</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><strong>1 200+</strong><span>участников</span></div>
+          <div class="stat"><strong>48</strong><span>книг прочитано</span></div>
+          <div class="stat"><strong>4.9★</strong><span>средняя оценка</span></div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="book-stack">
+          <div class="book-stack__item book-stack__item--1">📕</div>
+          <div class="book-stack__item book-stack__item--2">📗</div>
+          <div class="book-stack__item book-stack__item--3">📘</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- О клубе -->
+  <!-- ===== О клубе ===== -->
   <section id="about" class="section">
     <div class="container">
-      <h2>О клубе</h2>
+      <div class="section__head">
+        <span class="section__label">О клубе</span>
+        <h2 class="section__title">Читать — это хорошо.<br>Читать вместе — лучше.</h2>
+      </div>
       <div class="cards">
         <div class="card">
-          <h3>📖 Одна книга в месяц</h3>
-          <p>Выбираем вместе голосованием. Читаем в своём темпе.</p>
+          <div class="card__icon">📚</div>
+          <h3 class="card__title">Одна книга в месяц</h3>
+          <p class="card__text">Выбираем голосованием. Читаем в своём темпе. Не успел — не страшно, всегда можно догнать на следующей.</p>
         </div>
         <div class="card">
-          <h3>💬 Обсуждение онлайн</h3>
-          <p>Раз в месяц встречаемся в Zoom на 1 час. Записи сохраняем.</p>
+          <div class="card__icon">💬</div>
+          <h3 class="card__title">Живое обсуждение</h3>
+          <p class="card__text">Раз в месяц встречаемся онлайн на час. Спорим, находим неожиданные смыслы, иногда — новых друзей.</p>
         </div>
         <div class="card">
-          <h3>🎁 Бесплатно</h3>
-          <p>Никаких взносов. Только книги и желание обсуждать.</p>
+          <div class="card__icon">🎁</div>
+          <h3 class="card__title">Без взносов и обязательств</h3>
+          <p class="card__text">Никаких платежей, дедлайнов и «ты должен». Только книги и желание обсуждать.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🌍</div>
+          <h3 class="card__title">Из любой точки мира</h3>
+          <p class="card__text">Клуб полностью онлайн. Участники из 14 стран — от Калининграда до Сан-Франциско.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Книги месяца -->
-  <section id="books" class="section section--gray">
+  <!-- ===== Книги месяца ===== -->
+  <section id="books" class="section section--tinted">
     <div class="container">
-      <h2>Книги месяца</h2>
+      <div class="section__head">
+        <span class="section__label">Сейчас читаем</span>
+        <h2 class="section__title">Книги месяца</h2>
+        <p class="section__subtitle">Три книги — три разных настроения. Выбирай ту, что откликается.</p>
+      </div>
       <div class="books">
-        <div class="book">
-          <div class="book__cover">📕</div>
-          <h3>«Мастер и Маргарита»</h3>
-          <p>М. Булгаков</p>
+        <article class="book-card">
+          <div class="book-card__cover book-card__cover--1">📕</div>
+          <div class="book-card__body">
+            <span class="book-card__tag">Классика</span>
+            <h3 class="book-card__title">Мастер и Маргарита</h3>
+            <p class="book-card__author">Михаил Булгаков</p>
+            <p class="book-card__desc">Роман, в котором дьявол приходит в Москву, а любовь оказывается сильнее смерти.</p>
+          </div>
+        </article>
+        <article class="book-card">
+          <div class="book-card__cover book-card__cover--2">📗</div>
+          <div class="book-card__body">
+            <span class="book-card__tag">Антиутопия</span>
+            <h3 class="book-card__title">1984</h3>
+            <p class="book-card__author">Джордж Оруэлл</p>
+            <p class="book-card__desc">Классика, которая с каждым годом становится всё более жуткой в своей актуальности.</p>
+          </div>
+        </article>
+        <article class="book-card">
+          <div class="book-card__cover book-card__cover--3">📘</div>
+          <div class="book-card__body">
+            <span class="book-card__tag">Нон-фикшн</span>
+            <h3 class="book-card__title">Sapiens</h3>
+            <p class="book-card__author">Юваль Ной Харари</p>
+            <p class="book-card__desc">Краткая история человечества — от первых костров до искусственного интеллекта.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Как это работает ===== -->
+  <section id="how" class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Как это работает</span>
+        <h2 class="section__title">Три шага — и вы в клубе</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">01</span>
+          <h3 class="step__title">Оставляете заявку</h3>
+          <p class="step__text">Имя, телефон и любимый жанр — этого достаточно. Никаких длинных анкет.</p>
         </div>
-        <div class="book">
-          <div class="book__cover">📗</div>
-          <h3>«1984»</h3>
-          <p>Дж. Оруэлл</p>
+        <div class="step">
+          <span class="step__num">02</span>
+          <h3 class="step__title">Получаете ссылку</h3>
+          <p class="step__text">В течение 15 минут присылаем ссылку на ближайшую встречу и чат клуба.</p>
         </div>
-        <div class="book">
-          <div class="book__cover">📘</div>
-          <h3>«Тень горы»</h3>
-          <p>Г. Д. Робертс</p>
+        <div class="step">
+          <span class="step__num">03</span>
+          <h3 class="step__title">Читаете и обсуждаете</h3>
+          <p class="step__text">Читаете книгу месяца и приходите на онлайн-обсуждение. Всё.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Форма -->
-  <section id="join" class="section">
-    <div class="container container--narrow">
-      <h2>Вступить в клуб</h2>
-      <p class="subtitle">Оставьте заявку — пришлём ссылку на ближайшую встречу.</p>
-
-      <form id="order-form" class="form">
-        <label>
-          Имя *
-          <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-        </label>
-
-        <label>
-          Телефон *
-          <input type="tel" name="phone" id="phone" placeholder="+7 (999) 123-45-67">
-        </label>
-
-        <label>
-          Любимый жанр
-          <select name="plan" id="plan">
-            <option value="">Не важно</option>
-            <option value="Классика">Классика</option>
-            <option value="Фантастика">Фантастика</option>
-            <option value="Детектив">Детектив</option>
-            <option value="Нон-фикшн">Нон-фикшн</option>
-          </select>
-        </label>
-
-        <label>
-          Комментарий
-          <textarea name="comment" id="comment" rows="3" placeholder="Любимая книга или пожелание"></textarea>
-        </label>
-
-        <button type="submit" id="submit-btn" class="btn btn--full">Отправить заявку</button>
-
-        <p id="form-status" class="form__status"></p>
-      </form>
+  <!-- ===== Отзывы ===== -->
+  <section class="section section--tinted">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Отзывы</span>
+        <h2 class="section__title">Что говорят участники</h2>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <blockquote class="review__text">«Я не читала 5 лет. Пришла в клуб — и за три месяца проглотила четыре книги. Оказывается, дело было не во мне, а в компании.»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">А</span>
+            <div>
+              <strong>Анна К.</strong>
+              <span>в клубе 8 месяцев</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__text">«Наконец-то нашёл людей, с которыми можно спорить о книге два часа и не чувствовать себя странным. Это дорогого стоит.»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">Д</span>
+            <div>
+              <strong>Дмитрий М.</strong>
+              <span>в клубе 1 год</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="review__text">«Формат "одна книга в месяц" — гениально. Не давит, но дисциплинирует. И обсуждения всегда тёплые, без снобизма.»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">М</span>
+            <div>
+              <strong>Мария С.</strong>
+              <span>в клубе 6 месяцев</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
-  <!-- Подвал -->
+  <!-- ===== Форма ===== -->
+  <section id="join" class="section section--join">
+    <div class="container container--narrow">
+      <div class="join-card">
+        <div class="join-card__head">
+          <span class="section__label">Вступить</span>
+          <h2 class="join-card__title">Забронируйте место в клубе</h2>
+          <p class="join-card__subtitle">Оставьте заявку — пришлём ссылку на ближайшую встречу и чат клуба.</p>
+        </div>
+
+        <form id="order-form" class="form">
+          <div class="form__row">
+            <label class="form__field">
+              <span>Имя *</span>
+              <input type="text" name="name" id="name" placeholder="Как вас зовут?" autocomplete="name">
+            </label>
+            <label class="form__field">
+              <span>Телефон *</span>
+              <input type="tel" name="phone" id="phone" placeholder="+7 (999) 123-45-67" autocomplete="tel">
+            </label>
+          </div>
+
+          <label class="form__field">
+            <span>Любимый жанр</span>
+            <select name="plan" id="plan">
+              <option value="">Не важно — выберу из предложенных</option>
+              <option value="Классика">Классика</option>
+              <option value="Фантастика">Фантастика</option>
+              <option value="Детектив">Детектив</option>
+              <option value="Нон-фикшн">Нон-фикшн</option>
+              <option value="Поэзия">Поэзия</option>
+            </select>
+          </label>
+
+          <label class="form__field">
+            <span>Комментарий</span>
+            <textarea name="comment" id="comment" rows="3" placeholder="Любимая книга или пожелание — необязательно"></textarea>
+          </label>
+
+          <button type="submit" id="submit-btn" class="btn btn--primary btn--full">Отправить заявку</button>
+
+          <p id="form-status" class="form__status"></p>
+
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Подвал ===== -->
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Книжный клуб «Читаем вместе» · Telegram · Email</p>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon">📖</span>
+        <strong>Читаем вместе</strong>
+        <p>Книжный клуб онлайн. Одна книга в месяц. Бесплатно.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#about">О клубе</a>
+        <a href="#books">Книги</a>
+        <a href="#how">Как это работает</a>
+        <a href="#join">Вступить</a>
+      </div>
+      <div class="footer__contact">
+        <a href="mailto:hello@bookclub.ru">hello@bookclub.ru</a>
+        <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        © 2026 Книжный клуб «Читаем вместе». Сделано с любовью к книгам.
+      </div>
     </div>
   </footer>
 
