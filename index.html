@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный клуб «Читаем вместе»</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">📚 Читаем вместе</a>
+      <nav class="nav">
+        <a href="#about" class="nav__link">О клубе</a>
+        <a href="#books" class="nav__link">Книги</a>
+        <a href="#join" class="nav__link">Вступить</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Герой -->
+  <section class="hero">
+    <div class="container">
+      <h1>Книжный клуб «Читаем вместе»</h1>
+      <p>Читаем по одной книге в месяц и обсуждаем онлайн. Бесплатно, без обязательств.</p>
+      <a href="#join" class="btn">Вступить в клуб</a>
+    </div>
+  </section>
+
+  <!-- О клубе -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>О клубе</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>📖 Одна книга в месяц</h3>
+          <p>Выбираем вместе голосованием. Читаем в своём темпе.</p>
+        </div>
+        <div class="card">
+          <h3>💬 Обсуждение онлайн</h3>
+          <p>Раз в месяц встречаемся в Zoom на 1 час. Записи сохраняем.</p>
+        </div>
+        <div class="card">
+          <h3>🎁 Бесплатно</h3>
+          <p>Никаких взносов. Только книги и желание обсуждать.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Книги месяца -->
+  <section id="books" class="section section--gray">
+    <div class="container">
+      <h2>Книги месяца</h2>
+      <div class="books">
+        <div class="book">
+          <div class="book__cover">📕</div>
+          <h3>«Мастер и Маргарита»</h3>
+          <p>М. Булгаков</p>
+        </div>
+        <div class="book">
+          <div class="book__cover">📗</div>
+          <h3>«1984»</h3>
+          <p>Дж. Оруэлл</p>
+        </div>
+        <div class="book">
+          <div class="book__cover">📘</div>
+          <h3>«Тень горы»</h3>
+          <p>Г. Д. Робертс</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма -->
+  <section id="join" class="section">
+    <div class="container container--narrow">
+      <h2>Вступить в клуб</h2>
+      <p class="subtitle">Оставьте заявку — пришлём ссылку на ближайшую встречу.</p>
+
+      <form id="order-form" class="form">
+        <label>
+          Имя *
+          <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+        </label>
+
+        <label>
+          Телефон *
+          <input type="tel" name="phone" id="phone" placeholder="+7 (999) 123-45-67">
+        </label>
+
+        <label>
+          Любимый жанр
+          <select name="plan" id="plan">
+            <option value="">Не важно</option>
+            <option value="Классика">Классика</option>
+            <option value="Фантастика">Фантастика</option>
+            <option value="Детектив">Детектив</option>
+            <option value="Нон-фикшн">Нон-фикшн</option>
+          </select>
+        </label>
+
+        <label>
+          Комментарий
+          <textarea name="comment" id="comment" rows="3" placeholder="Любимая книга или пожелание"></textarea>
+        </label>
+
+        <button type="submit" id="submit-btn" class="btn btn--full">Отправить заявку</button>
+
+        <p id="form-status" class="form__status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Книжный клуб «Читаем вместе» · Telegram · Email</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
