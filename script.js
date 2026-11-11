@@ -3,7 +3,7 @@
    Отправка заявки в Google Sheets + мелкие улучшения UI
    ============================================================ */
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyFXVaKsAhZd1DTesbNMQgGFcMxcmXN4Dw__EWy9Wo5g6ir22t16esEdnK1nnhHoA8R/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzKOwzDdoTRb0NJ22RYc2GvZDl3u-lNIOV7W3J0AsTQS8J05WEVJ_Pf8zN8p_1KNB5y/exec";
 
 /* ------------------------------------------------------------
    1. Прогресс скролла
